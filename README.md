@@ -74,3 +74,5 @@ node run.js
 ```
 
 Requires Node.js 22+. No external dependencies.
+
+Part of the [SuperInstance OpenConstruct](https://github.com/SuperInstance/OpenConstruct) ecosystem.
