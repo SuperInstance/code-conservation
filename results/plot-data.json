@@ -1,0 +1,49 @@
+{
+  "title": "Code Conservation Analysis",
+  "experiments": {
+    "clean-vs-spaghetti": {
+      "clean": 0.5907915615013288,
+      "spaghetti": 0.5881175747906191
+    },
+    "degradation": [
+      {
+        "level": "Level 0: Clean",
+        "score": 0.5019773408722077
+      },
+      {
+        "level": "Level 1: Mild coupling",
+        "score": 0.6243652248730907
+      },
+      {
+        "level": "Level 2: Cross-cutting calls",
+        "score": 0.7293490545992659
+      },
+      {
+        "level": "Level 3: Maximum spaghetti",
+        "score": 0.6879358929701823
+      }
+    ],
+    "bugs": [
+      {
+        "name": "No bugs (clean)",
+        "bugs": 0,
+        "conservation": 0.4841971006069288
+      },
+      {
+        "name": "1 bug (missing null check)",
+        "bugs": 1,
+        "conservation": 0.48419710061079263
+      },
+      {
+        "name": "3 bugs (anti-patterns)",
+        "bugs": 3,
+        "conservation": 0.7429152535535493
+      },
+      {
+        "name": "5 bugs (severe anti-patterns)",
+        "bugs": 5,
+        "conservation": 0.7247916856413743
+      }
+    ]
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "experiment1": {
+    "clean": {
+      "graph": {
+        "name": "clean-http",
+        "nodes": 16,
+        "edges": 56
+      },
+      "conservation": {
+        "score": 0.5907915615013288,
+        "spectralFlatness": 0.8574474239905144,
+        "conservationRatio": 0.11746506455420132,
+        "smoothness": 0.7457945373447852,
+        "eigenvalues": [
+          4.099999958896458,
+          4.09999996690507,
+          4.099999994078764,
+          4.1000000134110826,
+          5.037678542611335,
+          5.8568541122793345,
+          5.856854218481653,
+          6.912858322481492,
+          12.431393348021665,
+          13.419649866938652,
+          14.130111445525648,
+          18.3630504227984
+        ],
+        "details": {
+          "geoMean": 7.031672677967032,
+          "ariMean": 8.20070418446913,
+          "lowEnergy": 126.92094464419928,
+          "totalEnergy": 1080.4995095851225,
+          "eMin": 4.099999958896458,
+          "eMax": 18.3630504227984
+        }
+      },
+      "laplacianSize": 16,
+      "eigenvalueCount": 12
+    },
+    "spaghetti": {
+      "graph": {
+        "name": "spaghetti-http",
+        "nodes": 9,
+        "edges": 47
+      },
+      "conservation": {
+        "score": 0.5881175747906191,
+        "spectralFlatness": 0.831956627395336,
+        "conservationRatio": 0.08206265911556762,
+        "smoothness": 0.7847794720933698,
+        "eigenvalues": [
+          7.271219642591729,
+          11.687645336656294,
+          15.850368874491618,
+          20.419663196973854,
+          23.41861364146508,
+          29.839474463978593,
+          55.44243921718171
+        ],
+        "details": {
+          "geoMean": 19.483167290523788,
+          "ariMean": 23.418489196291265,
+          "lowEnergy": 440.70588206372804,
+          "totalEnergy": 5370.3582946671095,
+          "eMin": 7.271219642591729,
+          "eMax": 55.44243921718171
+        }
+      },
+      "laplacianSize": 9,
+      "eigenvalueCount": 7
+    },
+    "confirmed": true
+  },
+  "experiment2": {
+    "results": [
+      {
+        "name": "Level 0: Clean",
+        "score": 0.5019773408722077,
+        "nodes": 6,
+        "edges": 9,
+        "eigenvalues": [
+          1.5142135623821888,
+          1.5142135623855024,
+          1.51421356238989,
+          7.251292174912534
+        ]
+      },
+      {
+        "name": "Level 1: Mild coupling",
+        "score": 0.6243652248730907,
+        "nodes": 6,
+        "edges": 11,
+        "eigenvalues": [
+          1.0999999904477302,
+          2.7480608920289242,
+          3.099999895779138,
+          6.77282369697277
+        ]
+      },
+      {
+        "name": "Level 2: Cross-cutting calls",
+        "score": 0.7293490545992659,
+        "nodes": 6,
+        "edges": 18,
+        "eigenvalues": [
+          4.1986480344854336,
+          6.2375511399803925,
+          6.609608725604131,
+          9.65524823084393
+        ]
+      },
+      {
+        "name": "Level 3: Maximum spaghetti",
+        "score": 0.6879358929701823,
+        "nodes": 6,
+        "edges": 34,
+        "eigenvalues": [
+          12.10000000912638,
+          12.100000076114284,
+          12.100000151617571,
+          14.099999671491705
+        ]
+      }
+    ],
+    "monotonic": false
+  },
+  "experiment3": {
+    "results": [
+      {
+        "name": "No bugs (clean)",
+        "bugs": 0,
+        "conservation": 0.4841971006069288,
+        "spectralFlatness": 0.7183053652833559,
+        "smoothness": 0.627322003753011
+      },
+      {
+        "name": "1 bug (missing null check)",
+        "bugs": 1,
+        "conservation": 0.48419710061079263,
+        "spectralFlatness": 0.7183053652910658,
+        "smoothness": 0.6273220037547476
+      },
+      {
+        "name": "3 bugs (anti-patterns)",
+        "bugs": 3,
+        "conservation": 0.7429152535535493,
+        "spectralFlatness": 0.9672491768236652,
+        "smoothness": 0.8821035930093803
+      },
+      {
+        "name": "5 bugs (severe anti-patterns)",
+        "bugs": 5,
+        "conservation": 0.7247916856413743,
+        "spectralFlatness": 0.9920686247737034,
+        "smoothness": 0.76429763013415
+      }
+    ],
+    "correlation": 0.8912470726948155
+  },
+  "experiment4": {
+    "js": {
+      "graph": {
+        "name": "clean-http",
+        "nodes": 16,
+        "edges": 56
+      },
+      "conservation": {
+        "score": 0.5907915612069111,
+        "spectralFlatness": 0.85744742431231,
+        "conservationRatio": 0.11746506501018272,
+        "smoothness": 0.7457945360254082,
+        "eigenvalues": [
+          4.099999975301618,
+          4.099999989724781,
+          4.0999999927915045,
+          4.099999999945379,
+          5.037678548530994,
+          5.856854127522464,
+          5.856854215299094,
+          6.9128582992346574,
+          12.431393336400271,
+          13.419649940267357,
+          14.130111347554454,
+          18.363050437805725
+        ],
+        "details": {
+          "geoMean": 7.031672680459412,
+          "ariMean": 8.200704184298191,
+          "lowEnergy": 126.92094508306516,
+          "totalEnergy": 1080.4995091269284,
+          "eMin": 4.099999975301618,
+          "eMax": 18.363050437805725
+        }
+      },
+      "laplacianSize": 16,
+      "eigenvalueCount": 12
+    },
+    "py": {
+      "graph": {
+        "name": "clean-python",
+        "nodes": 11,
+        "edges": 22
+      },
+      "conservation": {
+        "score": 0.5396066698263415,
+        "spectralFlatness": 0.7404673118700182,
+        "conservationRatio": 0.05265022650269248,
+        "smoothness": 0.7541785207863207,
+        "eigenvalues": [
+          1.4164897866504536,
+          2.03205078981958,
+          2.032050831434828,
+          2.449060408292401,
+          2.525476353317644,
+          7.198757863811368,
+          8.633791211295373,
+          12.64430648872744
+        ],
+        "details": {
+          "geoMean": 3.6034826677481275,
+          "ariMean": 4.866497966768636,
+          "lowEnergy": 16.262801193091743,
+          "totalEnergy": 308.88378404716036,
+          "eMin": 1.4164897866504536,
+          "eMax": 12.64430648872744
+        }
+      },
+      "laplacianSize": 11,
+      "eigenvalueCount": 8
+    },
+    "rust": {
+      "graph": {
+        "name": "clean-rust-style",
+        "nodes": 11,
+        "edges": 18
+      },
+      "conservation": {
+        "score": 0.4484236075270405,
+        "spectralFlatness": 0.6673717378386907,
+        "conservationRatio": 0.034276261120904344,
+        "smoothness": 0.594823019597905,
+        "eigenvalues": [
+          2.7457513099266078,
+          3.0699970124544858,
+          3.941657367446816,
+          3.9416574306551313,
+          4.589505055920383,
+          5.40432865970832,
+          9.501023000508754,
+          34.82669807755639
+        ],
+        "details": {
+          "geoMean": 5.6743797484142,
+          "ariMean": 8.50257723937211,
+          "lowEnergy": 48.03735801542972,
+          "totalEnergy": 1401.476019977359,
+          "eMin": 2.7457513099266078,
+          "eMax": 34.82669807755639
+        }
+      },
+      "laplacianSize": 11,
+      "eigenvalueCount": 8
+    },
+    "ranked": [
+      {
+        "lang": "JavaScript",
+        "score": 0.5907915612069111
+      },
+      {
+        "lang": "Python",
+        "score": 0.5396066698263415
+      },
+      {
+        "lang": "Rust-style",
+        "score": 0.4484236075270405
+      }
+    ]
+  },
+  "experiment5": {
+    "found": false,
+    "moo": {
+      "graph": {
+        "name": "moo-spectral-synthetic",
+        "nodes": 7,
+        "edges": 14
+      },
+      "conservation": {
+        "score": 0.479161969597087,
+        "spectralFlatness": 0.7133957933524159,
+        "conservationRatio": 0.0385520468147338,
+        "smoothness": 0.6339440438673551,
+        "eigenvalues": [
+          1.2647640089865992,
+          1.614213598500171,
+          1.822114045132481,
+          2.0320507395796565,
+          9.870502334395667
+        ],
+        "details": {
+          "geoMean": 2.3689940605967976,
+          "ariMean": 3.320728945418915,
+          "lowEnergy": 4.205313540010726,
+          "totalEnergy": 109.08145967501632,
+          "eMin": 1.2647640089865992,
+          "eMax": 9.870502334395667
+        }
+      },
+      "laplacianSize": 7,
+      "eigenvalueCount": 5
+    },
+    "conservation": {
+      "graph": {
+        "name": "conservation.js",
+        "nodes": 8,
+        "edges": 44
+      },
+      "conservation": {
+        "score": 0.488125478294548,
+        "spectralFlatness": 0.6638049537807611,
+        "conservationRatio": 0.02789379073137358,
+        "smoothness": 0.7015396373522691,
+        "eigenvalues": [
+          2.8212279280330463,
+          3.113641150295528,
+          4.609492681308984,
+          7.5525247598755385,
+          14.06395084096153,
+          33.17970641356996
+        ],
+        "details": {
+          "geoMean": 7.228896106789339,
+          "ariMean": 10.890090629107432,
+          "lowEnergy": 38.90151101376838,
+          "totalEnergy": 1394.6297722099796,
+          "eMin": 2.8212279280330463,
+          "eMax": 33.17970641356996
+        }
+      },
+      "laplacianSize": 8,
+      "eigenvalueCount": 6
+    }
+  }
+}
